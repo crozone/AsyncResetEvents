@@ -1,4 +1,8 @@
 # AsyncResetEvents
+
+[![NuGet](https://img.shields.io/badge/nuget-1.0.0-green.svg)](https://www.nuget.org/packages/crozone.AsyncResetEvents/)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
+
 Async compatible auto and manual reset events.
 
 ## Async compatible reset events
