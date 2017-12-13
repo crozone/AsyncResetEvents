@@ -41,9 +41,9 @@ namespace crozone.AsyncResetEvents
         /// </summary>
         /// <param name="set">If true, the event starts as set. If false, the event starts as unset.</param>
         /// <param name="autoReset">If true, functions as an auto-reset event. If false, functions as a manual reset event.</param>
-        public AsyncResetEvent(bool eventSet, bool autoReset)
+        public AsyncResetEvent(bool set, bool autoReset)
         {
-            this.eventSet = eventSet;
+            this.eventSet = set;
             this.autoReset = autoReset;
         }
 
