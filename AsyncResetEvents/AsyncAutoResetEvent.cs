@@ -1,4 +1,4 @@
-﻿namespace AsyncResetEvents
+﻿namespace crozone.AsyncResetEvents
 {
     /// <summary>
     /// Async compatible auto-reset event.

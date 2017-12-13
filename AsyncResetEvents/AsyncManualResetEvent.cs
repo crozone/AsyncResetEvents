@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AsyncResetEvents
+namespace crozone.AsyncResetEvents
 {
     /// <summary>
     /// Async compatible manual-reset event.
