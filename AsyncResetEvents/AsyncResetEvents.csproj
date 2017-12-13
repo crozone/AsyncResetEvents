@@ -5,4 +5,29 @@
     <RootNamespace>crozone.AsyncResetEvents</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <Title>AsyncResetEvents</Title>
+    <AssemblyName>crozone.AsyncResetEvents</AssemblyName>
+    <Description>Async compatible auto and manual reset events for NetStandard 2.0</Description>
+    <Authors>Ryan Crosby</Authors>
+    <PackageId>crozone.AsyncResetEvents</PackageId>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright © Ryan Crosby 2017</Copyright>
+    <PackageTags>async auto manual reset event NetStandard 2.0</PackageTags>
+    <PackageProjectUrl>https://github.com/crozone/AsyncResetEvents</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/crozone/AsyncResetEvents</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\crozone.AsyncResetEvents.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\crozone.AsyncResetEvents.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
