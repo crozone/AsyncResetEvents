@@ -173,15 +173,6 @@ namespace crozone.AsyncResetEvents
         {
             lock (mainLock)
             {
-                //
-                // The logic for setting the event is as follows:
-                // 
-                // If there are any waiters in the wait queue,
-                // start dequeuing them and cancelling them.
-                //
-                // If this is an auto
-
-
                 while (waitQueue.Count > 0)
                 {
                     // Dequeue waiters from the queue.
