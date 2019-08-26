@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncResetEvents", "AsyncResetEvents\AsyncResetEvents.csproj", "{2B289587-703E-4FE0-B229-601F5E61882F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncResetEvents", "AsyncResetEvents\AsyncResetEvents.csproj", "{2B289587-703E-4FE0-B229-601F5E61882F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{BDB15949-4B29-4A2B-AB8F-27F7EA5BFCD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2B289587-703E-4FE0-B229-601F5E61882F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B289587-703E-4FE0-B229-601F5E61882F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B289587-703E-4FE0-B229-601F5E61882F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB15949-4B29-4A2B-AB8F-27F7EA5BFCD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB15949-4B29-4A2B-AB8F-27F7EA5BFCD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB15949-4B29-4A2B-AB8F-27F7EA5BFCD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB15949-4B29-4A2B-AB8F-27F7EA5BFCD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,6 @@
+using crozone.AsyncResetEvents;
 using System;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Tests
@@ -8,6 +10,13 @@ namespace Tests
         [Fact]
         public void Test1()
         {
+            AsyncAutoResetEvent asyncAutoResetEvent = new AsyncAutoResetEvent();
+
+            Task awaitingTask = Task.Run(async () =>
+            {
+                await asyncAutoResetEvent.WaitAsync();
+            });
+
 
         }
     }

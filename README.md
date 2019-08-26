@@ -1,6 +1,6 @@
 # AsyncResetEvents
 
-[![NuGet](https://img.shields.io/badge/nuget-1.0.0-green.svg)](https://www.nuget.org/packages/crozone.AsyncResetEvents/)
+[![NuGet](https://img.shields.io/badge/nuget-1.0.1-green.svg)](https://www.nuget.org/packages/crozone.AsyncResetEvents/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
 
 Async compatible auto and manual reset events.
@@ -13,7 +13,7 @@ This allows events to be awaited in a manner that doesn't block the thread, allo
 
 ## Requirements
 
-The library is written for NetStandard 2.0, and is entirely self-contained.
+The library is written for NetStandard 2.0 and .NET 4.5, and is entirely self-contained with no external dependencies.
 
 ## Behaviour
 

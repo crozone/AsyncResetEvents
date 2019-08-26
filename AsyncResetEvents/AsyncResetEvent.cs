@@ -87,7 +87,13 @@ namespace crozone.AsyncResetEvents
             //
             if (cancellationToken.IsCancellationRequested)
             {
+#if NET45
+                var tcs = new TaskCompletionSource<bool>();
+                tcs.TrySetCanceled();
+                return tcs.Task;
+#else
                 return Task.FromCanceled(cancellationToken);
+#endif
             }
 
             lock (mainLock)
@@ -128,7 +134,11 @@ namespace crozone.AsyncResetEvents
                             // Use TrySetCanceled so that even if the task is already completed,
                             // we don't throw an exception.
                             //
+#if NET45
+                            completionSource.TrySetCanceled();
+#else
                             completionSource.TrySetCanceled(cancellationToken);
+#endif
                         }
                     }, useSynchronizationContext: false);
 
