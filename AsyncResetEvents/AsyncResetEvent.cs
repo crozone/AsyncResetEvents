@@ -120,7 +120,15 @@ namespace crozone.AsyncResetEvents
                     // When set is called, it will dequeue the completion task, and
                     // transition it to completed, thereby completing the task.
                     //
+#if NET45
                     TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>();
+#else
+                    // Run the continuation asynchronously if the current API level supports it.
+                    // Otherwise, the continuation will be run synchronously by default, which can cause
+                    // TaskCompletionSource.SetResult() to block while it executes the remainder of the completion (!).
+                    //
+                    TaskCompletionSource<bool> completionSource = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+#endif
 
                     // Cancel the task if the cancellation token is triggered.
                     //
