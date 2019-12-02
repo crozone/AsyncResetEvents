@@ -11,7 +11,7 @@
     <Description>Async compatible auto and manual reset events for NetStandard 2.0 and .NET 4.5</Description>
     <Authors>Ryan Crosby</Authors>
     <PackageId>crozone.AsyncResetEvents</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Copyright>Copyright © Ryan Crosby 2017</Copyright>
     <PackageTags>async auto manual reset event NetStandard 2.0</PackageTags>
     <PackageProjectUrl>https://github.com/crozone/AsyncResetEvents</PackageProjectUrl>
@@ -19,7 +19,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/crozone/AsyncResetEvents</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <PackageReleaseNotes>Avoid blocking behaviour and potential deadlocks by running continuations asynchronously.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
